@@ -5,7 +5,7 @@ let g:gruvbox_bold='1'
 let g:gruvbox_italic='1'
 let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_italicize_comments='1'
-set termguicolors
+set t_Co=256 
 
 "Color scheme (Gruvbox)
 colorscheme gruvbox
@@ -27,12 +27,11 @@ filetype indent on
 set tabstop=4
 set list
 set lcs=tab:<->
-
 set wrap
 
-"Remaps for navigation in general
+"Remaps for navigation in general nad NERDTree
 imap <space><space> <ESC>/<++><cr>4xi
-
+nmap <C-n> :NERDTreeToggle<cr>
 
 "Add remap files
 runtime customkeymaps/tex.vim
