@@ -1,13 +1,5 @@
 #!/bin/bash
 
-#Update the entire system
-yes | sudo apt-get update
-yes | sudo apt-get dist-upgrade
-
-#Install basic programs
-yes | sudo apt-get install git gcc gdb vim python3 python3-pip neofetch exuberant-ctags tmux make
-yes | sudo pip3 install powerline-shell
-
 #Clone DotFiles
 cd ~
 git clone https://github.com/artic42/DotFiles.git
@@ -39,4 +31,3 @@ cp -rf powerline-shell ~/.config/
 
 
 #Last order is to reboot
-sudo reboot
