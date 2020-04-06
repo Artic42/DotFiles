@@ -1,10 +1,7 @@
 #!/usr/bash
-#Clone DotFiles
-cd ~
-git clone https://github.com/artic42/DotFiles.git
-
 #Copy config files to home directory
-cd DotFiles
+cd ~/DotFiles
+
 #Config Vim
 rm -rf ~/.vim
 cp -rf vim ~/.vim
@@ -46,3 +43,7 @@ rm -rf ~/.script
 cp -rf script ~/.script
 rm -rf ~/.bin
 cp -rf bin ~/.bin
+
+#Add Templates
+rm -rf ~/Templates
+cp -rf Templates ~/Templates

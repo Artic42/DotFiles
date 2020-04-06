@@ -8,8 +8,12 @@ yes | sudo apt-get dist-upgrade
 yes | sudo apt-get install git gcc gdb vim python3 python3-pip neofetch exuberant-ctags tmux make
 yes | sudo pip3 install powerline-shell
 
+#Clone DotFiles
+cd ~
+git clone https://github.com/artic42/DotFiles.git
+
 #Execute non-distro dependeding part
-sh ~/DotFiles/script/copy_conf.sh
+source ~/DotFiles/script/copy_conf.sh
 
 #Last order is to reboot
-#sudo reboot
+sh ~/.script/prompt_reboot.sh
