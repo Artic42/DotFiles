@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #Update the entire system
 yes | sudo apt-get update
@@ -13,7 +13,7 @@ cd ~
 git clone https://github.com/artic42/DotFiles.git
 
 #Execute non-distro dependeding part
-source ~/DotFiles/script/copy_conf.sh
+sh ~/DotFiles/script/copy_conf.sh
 
 #Last order is to reboot
-sh ~/.script/prompt_reboot.sh
+~/.script/prompt_reboot.sh

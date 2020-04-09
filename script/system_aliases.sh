@@ -1,3 +1,4 @@
+#!/bin/bash
 #Listing aliases
 alias ll='ls -l'
 alias lA='ls -A'

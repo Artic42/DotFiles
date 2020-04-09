@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/bin/bash
 #Copy config files to home directory
 cd ~/DotFiles
 
@@ -41,8 +41,10 @@ cp -rf powerline-shell ~/.config/
 #Add binaries and scripts
 rm -rf ~/.script
 cp -rf script ~/.script
+chmod -R u+x ~/.script
 rm -rf ~/.bin
 cp -rf bin ~/.bin
+chmod -R u+x ~/.bin
 
 #Add Templates
 rm -rf ~/Templates
