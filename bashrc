@@ -40,3 +40,4 @@ fi
 
 #Loading alias files
 source ~/.script/system_aliases.sh
+source ~/.script/file_creation_aliases.sh
