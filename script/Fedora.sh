@@ -4,7 +4,7 @@
 yes | sudo dnf upgrade
 
 #Install basic programs
-yes | sudo dnf install git gcc gdb vim python3 python3-pip neofetch exuberant-ctags tmux make rxvt-unicode
+yes | sudo dnf install git gcc gdb vim python3 python3-pip neofetch ctags tmux make rxvt-unicode
 yes | sudo pip3 install powerline-shell
 
 #Clone DotFiles
