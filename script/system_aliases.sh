@@ -4,6 +4,11 @@ alias ll='ls -l'
 alias lA='ls -A'
 alias la='ls -la'
 alias l='ls -CF'
+alias lf='la | grep'
+
+#Permission change macros
+alias givex='chmod -v u+x'
+alias givexo='chmod -v uo+x'
 
 #Aliases for launching applications
 	alias vi='vim'
@@ -18,8 +23,6 @@ alias l='ls -CF'
 	alias gpl='git pull'
 	#Python aliases
 	alias python='python3'
-	alias py='python3'
-
 
 #Shutdown and reboot
 alias sdn='sudo shutdown now'

@@ -38,6 +38,10 @@ cp -f bashrc ~/.bashrc
 rm -rf ~/.config/powerline-shell
 cp -rf powerline-shell ~/.config/
 
+#Config Urxvt
+rm -rf ~/.urxvt
+cp -rf urxvt ~/.urxvt
+
 #Add binaries and scripts
 rm -rf ~/.script
 cp -rf script ~/.script
@@ -49,3 +53,6 @@ chmod -R u+x ~/.bin
 #Add Templates
 rm -rf ~/Templates
 cp -rf Templates ~/Templates
+
+#Choose theme
+select-theme.sh

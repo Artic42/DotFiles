@@ -1,10 +1,11 @@
 "Airline configuration
-set background=dark 
+runtime theme/vim-theme "Read from a file what theme was selected 
 let g:airline_theme='gruvbox'
-let g:gruvbox_bold='1'
-let g:gruvbox_italic='1'
+let g:gruvbox_bold=1
+let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_italicize_comments='1'
+let g:gruvbox_contrast_light='hard'
+let g:gruvbox_italicize_comments=1
 set t_Co=256 
 
 "Color scheme (Gruvbox)
@@ -30,7 +31,7 @@ set lcs=tab:<->
 set wrap
 
 "Remaps for navigation in general nad NERDTree
-imap <space><space> <ESC>/<++><cr>4xi
+imap <C-b> <ESC>/<++><cr>4xi
 nmap <C-n> :NERDTreeToggle<cr>
 
 "Add remap files

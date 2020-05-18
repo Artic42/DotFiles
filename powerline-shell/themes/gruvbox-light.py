@@ -44,20 +44,20 @@ faded_aqua   = 66
 faded_orange = 130
 
 class Color(DefaultColor):
-    USERNAME_ROOT_BG = faded_red
-    USERNAME_BG = dark2
-    USERNAME_FG = bright_purple
+    USERNAME_ROOT_BG = bright_red
+    USERNAME_BG = light3
+    USERNAME_FG = faded_blue
 
-    HOSTNAME_BG = dark1
-    HOSTNAME_FG = bright_purple
+    HOSTNAME_BG = light2
+    HOSTNAME_FG = faded_blue
 
     HOME_SPECIAL_DISPLAY = True
     HOME_BG = faded_blue 
     HOME_FG = light1
-    PATH_BG = dark2
-    PATH_FG = light2
-    CWD_FG = light2
-    SEPARATOR_FG = dark_gray
+    PATH_BG = light2
+    PATH_FG = dark2
+    CWD_FG = dark2
+    SEPARATOR_FG = light_gray
 
     READONLY_BG = bright_red
     READONLY_FG = light0
@@ -73,8 +73,8 @@ class Color(DefaultColor):
     JOBS_FG = neutral_aqua
     JOBS_BG = dark1
 
-    CMD_PASSED_FG = light4
-    CMD_PASSED_BG = dark1
+    CMD_PASSED_FG = dark1
+    CMD_PASSED_BG = light3 
     CMD_FAILED_FG = light0
     CMD_FAILED_BG = neutral_red
 
