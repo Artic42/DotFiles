@@ -55,4 +55,4 @@ rm -rf ~/Templates
 cp -rf Templates ~/Templates
 
 #Choose theme
-select-theme.sh
+selectTheme

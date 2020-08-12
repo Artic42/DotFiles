@@ -12,7 +12,7 @@ cd ~
 git clone https://github.com/artic42/DotFiles.git
 
 #Execute non-distro dependeding part
-~/DotFiles/script/copy_conf.sh
+~/DotFiles/script/copyConf
 
 #Last order is to reboot
-~/.script/prompt_reboot.sh
+~/.script/promptReboot
