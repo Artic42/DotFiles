@@ -13,7 +13,7 @@ def stringToFile (string, path):
 
 def listToFile (List, path):
 	FD = open (path, 'w')
-	for String in List:
+	for string in List:
 		FD.write((str) string + '\n')
 
 def appendStringToFile (string, path):

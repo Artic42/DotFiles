@@ -39,5 +39,5 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 fi
 
 #Loading alias files
-source ~/.script/system_aliases.sh
-source ~/.script/file_creation_aliases.sh
+source ~/.script/systemAliases
+source ~/.script/fileCreationAliases
