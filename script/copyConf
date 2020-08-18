@@ -10,6 +10,10 @@ cp -f vimrc ~/.vimrc
 #Add necesary plugins to the standard plugin managerfor vim 8.XX
 cd ~/.vim/pack/artic/start/
 
+#Config git standar user and email
+git config --global user.email "main@artic42.com"
+git config --global user.name "Artic42"
+
 #NERDTree
 git clone https://github.com/preservim/nerdtree.git
 vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
@@ -49,6 +53,10 @@ chmod -R u+x ~/.script
 rm -rf ~/.bin
 cp -rf bin ~/.bin
 chmod -R u+x ~/.bin
+
+#Add Fonts and update the cache
+sudo cp ~/DotFiles/Fonts/*.ttf /usr/share/fonts/truetype/SourceCode/
+sudo fc-cache -f -v
 
 #Add Templates
 rm -rf ~/Templates
