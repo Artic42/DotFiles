@@ -2,7 +2,7 @@ import smtplib
 from email.message import EmailMessage
 import os
 import sys
-import file_management as FM
+import fileManagement as FM
 
 tmp_path = "/tmp/email"
 data_path = "/home/artic/.data"
