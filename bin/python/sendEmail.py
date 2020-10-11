@@ -4,8 +4,9 @@ import os
 import sys
 import fileManagement as FM
 
+home_path = os.environ["HOME"]
 tmp_path = "/tmp/email"
-data_path = "/home/artic/.data"
+data_path = home_path + "/.data"
 
 def send(tar_file, data):
 	os.system ("mkdir -p /tmp/email")
