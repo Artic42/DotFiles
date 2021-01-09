@@ -63,6 +63,6 @@ rm -rf ~/Templates
 cp -rf Templates ~/Templates
 
 #Choose theme
-sh ~/.script/selectTheme
-sh ~/.script/configEmail
-sh ~/.script/promptReboot
+~/.script/selectTheme
+~/.script/configEmail
+~/.script/promptReboot
