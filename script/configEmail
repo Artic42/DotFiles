@@ -1,6 +1,7 @@
 #!/bin/bash
 read -p "Do you want to reconfigure an email account?" response
 if [ "$response" == "y" ]; then
+
 read -p "Is the email you want to configure in the outlook.com domain?" response
 if [ "$response" == "y" ]; then
 	server="smtp.outlook.com:587"
@@ -8,10 +9,10 @@ fi
 if [ "$response" == "n" ]; then
 	read -p "Give the SMTP server adress:" server
 fi
-fi
 
 read -p "Give username:" usr
 read -p "Give password:" pswd
+fi
 
 mkdir -p ~/.data
 
