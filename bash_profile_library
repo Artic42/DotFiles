@@ -2,4 +2,6 @@
 export PATH=$PATH:~/.bin:~/.script
 export PYTHONPATH=$PYTHONPATH:~/.bin/python/lib
 
+sudo sh ~/.script/mountRaid
+
 source ~/.bashrc
