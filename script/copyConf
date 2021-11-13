@@ -62,7 +62,4 @@ sudo fc-cache -f -v
 rm -rf ~/Templates
 cp -rf Templates ~/Templates
 
-#Choose theme
-sh ~/.script/selectTheme
-sh ~/.script/configEmail
-sh ~/.script/promptReboot
+

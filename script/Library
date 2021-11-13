@@ -14,3 +14,6 @@ git clone https://github.com/artic42/DotFiles.git
 
 #Execute non-distro dependeding part
 sh ~/DotFiles/script/copyConf
+
+#Copy de modified dash_profile
+cp ~/DotFiles/bash_profile_library ~/.bash_profile
