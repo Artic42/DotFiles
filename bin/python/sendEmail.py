@@ -11,12 +11,12 @@ data_path = home_path + "/.data"
 def send(tar_file, data):
 	os.system ("mkdir -p /tmp/email")
 	os.system ("tar -C " + tmp_path + " -xf " + tar_file)
-	MAIL = connect_mail_server (FM.fileToString(data + "/usr"),
+	MAIL = connectMailServer (FM.fileToString(data + "/usr"),
 					FM.fileToString(data + "/pswd"),
 					FM.fileToString(data + "/email_server"))
-	MAIL.send_message(create_email(tmp_path))
+	MAIL.send_message(createEmail(tmp_path))
 
-def connect_mail_server (usr, pswd, server):
+def connectMailServer (usr, pswd, server):
 	CONNECTION = smtplib.SMTP (host=server)
 	CONNECTION.ehlo()
 	CONNECTION.starttls()
@@ -24,7 +24,7 @@ def connect_mail_server (usr, pswd, server):
 	CONNECTION.login (usr, pswd)
 	return CONNECTION
 
-def create_email (path):
+def createEmail (path):
 	email = EmailMessage ()
 	email.set_content(FM.fileToString(path+"/body"))
 	email['Subject'] = FM.fileToString(path+"/subject") 
