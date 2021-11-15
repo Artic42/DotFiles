@@ -35,9 +35,9 @@ def createEmailFile (path, body, subject, sender, recipient):
 	os.system ("mkdir -p " + tmp_path)
 	FM.stringToFile (body, tmp_path + "/body")
 	FM.stringToFile (subject, tmp_path + "/subject")
-	FM.stringToFile (sender, tmp_path + "/sender")
-	FM.stringToFile (recipient, tmp_path + "/recipient")
-	os.system ("tar -cf " + path + " " + tmp_path)
+	FM.stringToFile (sender, tmp_path + "/from")
+	FM.stringToFile (recipient, tmp_path + "/to")
+	os.system ("cd " + tmp_path + " && tar -cf " + path + " body subject to from")
 	os.system ("rm -rf " + tmp_path)
 
 def createEmailConfig (path, server, usr, passwd):
