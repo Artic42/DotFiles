@@ -1,7 +1,7 @@
 
 def fileToString (path):
 	FD = open (path,'r')
-	return FD.read()[:-1]
+	return FD.read()
 
 def fileToList (path):
 	FD = open (path, 'r')
