@@ -4,11 +4,9 @@ import os
 import sys
 import fileManagement as FM
 
-home_path = os.environ["HOME"]
-tmp_path = "/tmp/email"
-data_path = home_path + "/.data"
-
 def send(tar_file, data):
+	tmp_path = "/tmp/email"
+
 	os.system ("mkdir -p /tmp/email")
 	os.system ("tar -C " + tmp_path + " -xf " + tar_file)
 	MAIL = connectMailServer (FM.fileToString(data + "/usr"),
@@ -33,4 +31,6 @@ def createEmail (path):
 	return email
 
 if __name__ == "__main__":
+	home_path = os.environ["HOME"]
+	data_path = home_path + "/.data"
 	send(sys.argv[1], data_path)
