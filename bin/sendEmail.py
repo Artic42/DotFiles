@@ -40,6 +40,11 @@ def createEmailFile (path, body, subject, sender, recipient):
 	os.system ("tar -cf " + path + " " + tmp_path)
 	os.system ("rm -rf " + tmp_path)
 
+def createEmailConfig (path, server, usr, passwd):
+    FM.stringToFile (server, path + "/email_server")
+    FM.stringToFile (usr, path + "/usr")
+    FM.stringToFile (passwd, path + "/pswd")
+
 if __name__ == "__main__":
 	home_path = os.environ["HOME"]
 	data_path = home_path + "/.data"
