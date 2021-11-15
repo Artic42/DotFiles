@@ -24,7 +24,7 @@ def connectMailServer (usr, pswd, server):
 
 def createEmail (path):
 	email = EmailMessage ()
-	email.set_content(FM.fileToString(path+"/body"))
+	email.set_content(FM.fileToString(path+"/body"), subtype='html')
 	email['Subject'] = FM.fileToString(path+"/subject") 
 	email['To'] = FM.fileToString(path+"/to")
 	email['From'] = FM.fileToString(path+"/from")
