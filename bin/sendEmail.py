@@ -7,7 +7,7 @@ import fileManagement as FM
 def send(tar_file, data):
 	tmp_path = "/tmp/email"
 
-	os.system ("mkdir -p /tmp/email")
+	os.system ("mkdir -p " + tmp_path)
 	os.system ("tar -C " + tmp_path + " -xf " + tar_file)
 	MAIL = connectMailServer (FM.fileToString(data + "/usr"),
 					FM.fileToString(data + "/pswd"),
@@ -29,6 +29,16 @@ def createEmail (path):
 	email['To'] = FM.fileToString(path+"/to")
 	email['From'] = FM.fileToString(path+"/from")
 	return email
+
+def createEmailFile (path, body, subject, sender, recipient):
+	tmp_path = "/tmp/emailFile"
+	os.system ("mkdir -p " + tmp_path)
+	FM.stringToFile (body, tmp_path + "/body")
+	FM.stringToFile (subject, tmp_path + "/subject")
+	FM.stringToFile (sender, tmp_path + "/sender")
+	FM.stringToFile (recipient, tmp_path + "/recipient")
+	os.system ("tar -cf " + path + " " + tmp_path)
+	os.system ("rm -rf " + tmp_path)
 
 if __name__ == "__main__":
 	home_path = os.environ["HOME"]
