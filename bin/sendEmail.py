@@ -3,6 +3,7 @@ from email.message import EmailMessage
 import os
 import sys
 import fileManagement as FM
+import modifyFile
 
 def send(tar_file, data):
 	tmp_path = "/tmp/email"
@@ -30,7 +31,17 @@ def createEmail (path):
 	email['From'] = FM.fileToString(path+"/from")
 	return email
 
-def createEmailFile (path, body, subject, sender, recipient):
+def createEmailFile (path, bodyPath, subject, sender, recipient):
+	tmp_path = "/tmp/emailFile"
+	os.system ("mkdir -p " + tmp_path)
+	modifyFile.copyFile (bodyPath, tmp_path + "/body")
+	FM.stringToFile (subject, tmp_path + "/subject")
+	FM.stringToFile (sender, tmp_path + "/from")
+	FM.stringToFile (recipient, tmp_path + "/to")
+	os.system ("cd " + tmp_path + " && tar -cf " + path + " body subject to from")
+	os.system ("rm -rf " + tmp_path)
+
+def createEmailFileString (path, body, subject, sender, recipient):
 	tmp_path = "/tmp/emailFile"
 	os.system ("mkdir -p " + tmp_path)
 	FM.stringToFile (body, tmp_path + "/body")
