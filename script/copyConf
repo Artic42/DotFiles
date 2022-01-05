@@ -50,9 +50,7 @@ cp -rf urxvt ~/.urxvt
 rm -rf ~/.script
 cp -rf script ~/.script
 chmod -R u+x ~/.script
-rm -rf ~/.bin
-cp -rf bin ~/.bin
-chmod -R u+x ~/.bin
+
 
 #Add Fonts and update the cache
 sudo cp ~/DotFiles/Fonts/*.ttf /usr/share/fonts/truetype/SourceCode/
