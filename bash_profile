@@ -2,4 +2,6 @@
 export PATH=$PATH:~/.bin:~/.script
 export PYTHONPATH=$PYTHONPATH:/home/artic/.lib/python
 
+sh ~/.start
+
 source ~/.bashrc

@@ -36,6 +36,7 @@ cp -rf tmux ~/.tmux
 #Config bash
 cp -f bash_logout ~/.bash_logout
 cp -f bash_profile ~/.bash_profile
+touch ~/.start
 cp -f bashrc ~/.bashrc
 
 #Config powerline
