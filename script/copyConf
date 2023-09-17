@@ -41,7 +41,9 @@ cp -f bashrc ~/.bashrc
 
 #Config powerline
 rm -rf ~/.config/powerline-shell
-cp -rf powerline-shell ~/.config/
+mkdir ~/.config/powerline-shell
+cp -f powerline-shell/conif.json ~/.config/powerline-shell
+cp -rf powerline-shell/themes ~/.config/powerline-shell
 
 #Config Urxvt
 rm -rf ~/.urxvt
