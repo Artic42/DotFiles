@@ -26,17 +26,11 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-#Run neofetch to visualize the computer info
-neofetch
-
-#Set powerline as part of the prompt
-function _update_ps1() {
-	PS1=$(powerline-shell $?)
-}
-
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-	PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# Use custom bash prompt (will execute .bash_prompt script)
+if [ -f ~/.bashPrompt ]; then
+  . ~/.bashPrompt
 fi
+
 
 #Loading alias files
 source ~/.script/systemAliases

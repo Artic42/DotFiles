@@ -38,6 +38,7 @@ cp -f bash_logout ~/.bash_logout
 cp -f bash_profile ~/.bash_profile
 touch ~/.start
 cp -f bashrc ~/.bashrc
+cp -f bashPrompt ~/.bashPrompt
 
 #Config powerline
 rm -rf ~/.config/powerline-shell
