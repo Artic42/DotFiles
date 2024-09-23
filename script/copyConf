@@ -28,11 +28,6 @@ git clone https://github.com/morhetz/gruvbox.git
 #Go back to DotFiles
 cd ~/DotFiles
 
-#Config Tmux
-cp -f tmux.conf ~/.tmux.conf
-rm -rf ~/.tmux
-cp -rf tmux ~/.tmux
-
 #Config bash
 cp -f bash_logout ~/.bash_logout
 cp -f bash_profile ~/.bash_profile
@@ -40,28 +35,11 @@ touch ~/.start
 cp -f bashrc ~/.bashrc
 cp -f bashPrompt ~/.bashPrompt
 
-#Config powerline
-rm -rf ~/.config/powerline-shell
-mkdir ~/.config/powerline-shell
-cp -f powerline-shell/conif.json ~/.config/powerline-shell
-cp -rf powerline-shell/themes ~/.config/powerline-shell
-
-#Config Urxvt
-rm -rf ~/.urxvt
-cp -rf urxvt ~/.urxvt
-
 #Add binaries and scripts
 rm -rf ~/.script
 cp -rf script ~/.script
 chmod -R u+x ~/.script
 
-
 #Add Fonts and update the cache
 sudo cp ~/DotFiles/Fonts/*.ttf /usr/share/fonts/truetype/SourceCode/
 sudo fc-cache -f -v
-
-#Add Templates
-rm -rf ~/Templates
-cp -rf Templates ~/Templates
-
-

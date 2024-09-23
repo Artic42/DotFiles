@@ -5,8 +5,7 @@ yes | sudo apt-get update
 yes | sudo apt-get dist-upgrade
 
 #Install basic programs
-yes | sudo apt-get install git gcc gdb vim python3 python3-pip neofetch exuberant-ctags tmux make rxvt-unicode
-yes | sudo pip3 install powerline-shell
+yes | sudo apt-get install git vim python3 python3-pip neofetch make docker.io docker-compose
 
 #Clone DotFiles
 cd ~

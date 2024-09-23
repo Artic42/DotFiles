@@ -1,2 +1,0 @@
-#Command to mount the 4 drives raid into the file system
-sudo mount /dev/md0 /mnt/raid1
