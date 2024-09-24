@@ -43,3 +43,5 @@ chmod -R u+x ~/.script
 #Add Fonts and update the cache
 sudo cp ~/DotFiles/Fonts/*.ttf /usr/share/fonts/truetype/SourceCode/
 sudo fc-cache -f -v
+
+cp ~/.vim/theme/vim-theme-dark ~/.vim/theme/vim-theme

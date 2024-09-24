@@ -13,7 +13,6 @@ shopt -s expand_aliases
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -27,11 +26,14 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Use custom bash prompt (will execute .bash_prompt script)
-if [ -f ~/.bashPrompt ]; then
+
+if [[ $- == *i* ]] then
+    if [ -f ~/.bashPrompt ]; then
   . ~/.bashPrompt
+  fi
 fi
+
 
 
 #Loading alias files
 source ~/.script/systemAliases
-source ~/.script/fileCreationAliases

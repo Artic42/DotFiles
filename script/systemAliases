@@ -6,6 +6,8 @@ alias la='ls -la'
 alias l='ls -CF'
 alias lf='la | grep'
 
+
+
 #Permission change macros
 alias givex='chmod -v u+x'
 alias givexo='chmod -v uo+x'
@@ -27,8 +29,3 @@ alias givexo='chmod -v uo+x'
 #Shutdown and reboot
 alias sdn='sudo shutdown now'
 alias rbn='sudo reboot'
-
-#Standard comands 
-alias vimrc='vim ~/.vimrc'
-alias bashrc='vim ~/.bashrc'
-alias tmuxconf='vim ~/.tmux.conf'
