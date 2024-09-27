@@ -44,4 +44,6 @@ chmod -R u+x ~/.script
 sudo cp ~/DotFiles/Fonts/*.ttf /usr/share/fonts/truetype/SourceCode/
 sudo fc-cache -f -v
 
+sudo usermod -aG docker $USER
+
 cp ~/.vim/theme/vim-theme-dark ~/.vim/theme/vim-theme
