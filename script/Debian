@@ -5,7 +5,10 @@ yes | sudo apt-get update
 yes | sudo apt-get dist-upgrade
 
 #Install basic programs
-yes | sudo apt-get install git vim python3 python3-pip neofetch make docker.io docker-compose
+yes | sudo apt-get install vim python3 python3-pip neofetch docker.io docker-compose
+yes | sudo apt-get install python3-poetry
+
+poetry config virtualenvs.in-project true
 
 #Clone DotFiles
 cd ~
